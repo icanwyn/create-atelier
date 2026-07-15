@@ -679,7 +679,7 @@
         </div>
 
         <h3 class="section-title">The Meat — Top 10 Insights</h3>
-        <p class="expand-hint">Click any insight for a full essay on its essence—and a real-world practice.</p>
+        <p class="expand-hint">Tap an insight for the teaching in hip-hop flow — meat intact, then a practice move.</p>
         <ol class="meat-list">
           ${insights
             .map((insight, i) => {
@@ -694,8 +694,8 @@
                 </div>
                 <div class="app-expand">
                   <div class="insight-detail-block">
-                    <div class="app-label">Essay · the insight unfolded</div>
-                    <div class="insight-detail">${formatAppBody(insight.detail || insight.headline || "")}</div>
+                    <div class="app-label">The bar · insight in flow</div>
+                    <div class="insight-detail"><p>${escapeHtml(insight.detail || insight.headline || "")}</p></div>
                   </div>
                   ${
                     app
