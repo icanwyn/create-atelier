@@ -2232,3 +2232,14 @@ body::after {
     transform: none !important;
   }
 }
+
+.insight-rap {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+}
+.insight-rap p {
+  margin: 0 0 0.35rem;
+  white-space: pre-line;
+}

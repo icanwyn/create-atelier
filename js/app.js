@@ -694,8 +694,8 @@
                 </div>
                 <div class="app-expand">
                   <div class="insight-detail-block">
-                    <div class="app-label">The bar · insight in flow</div>
-                    <div class="insight-detail"><p>${escapeHtml(insight.detail || insight.headline || "")}</p></div>
+                    <div class="app-label">Rap · the insight</div>
+                    <div class="insight-detail insight-rap">${formatAppBody(insight.detail || insight.headline || "")}</div>
                   </div>
                   ${
                     app
