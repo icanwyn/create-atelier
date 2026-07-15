@@ -135,16 +135,22 @@
     }
   }
 
-  /** Prep song labels for natural speech */
+  /**
+   * Prep text for speech.
+   * Never say song structure out loud — strip [Chorus] / [Verse] / [Bridge] /
+   * [Outro] labels (and bare "Chorus." / "Verse 1" lines). Keep all lyrics.
+   */
   function cleanText(text) {
     return String(text || "")
       .replace(/\r\n/g, "\n")
-      .replace(/\[Chorus\]/gi, "\nChorus.\n")
-      .replace(/\[Verse\s*3\s*\/\s*Outro\]/gi, "\nOutro.\n")
-      .replace(/\[Verse\s*(\d+)[^\]]*\]/gi, "\nVerse $1.\n")
-      .replace(/\[Bridge\][^\n\]]*/gi, "\nBridge.\n")
-      .replace(/\[Outro\]/gi, "\nOutro.\n")
-      .replace(/\(Slower,[^)]*\)/gi, "")
+      // Remove [Chorus], [Verse 1], [Bridge] (notes…), [Verse 3 / Outro], etc.
+      .replace(/\[(?:Chorus|Verse[^\]]*|Bridge[^\]]*|Outro[^\]]*)\]/gi, "")
+      // Remove bare structure-only lines
+      .replace(
+        /^\s*(?:Chorus|Verse\s*\d+(?:\s*\/\s*Outro)?|Bridge|Outro)\s*[.:]?\s*$/gim,
+        ""
+      )
+      .replace(/\(Slower[^)]*\)/gi, "")
       .replace(/\(maybe with vocal chops\)/gi, "")
       .replace(/[·•]/g, ", ")
       .replace(/[“”]/g, '"')
