@@ -54,7 +54,16 @@
       </div>
     </nav>
 
-    <header id="hero" class="hero" role="banner">
+    <header id="hero" class="hero hero--imagine" role="banner">
+      <div class="hero__photo" aria-hidden="true">
+        <img
+          src="assets/imagine/hero-concept.jpg"
+          alt=""
+          width="1600"
+          height="900"
+          decoding="async"
+        />
+      </div>
       <div class="hero__motifs" aria-hidden="true">
         <div class="hero__seigaiha"></div>
         <div class="hero__mountains hero__mountains--far"></div>
@@ -66,42 +75,55 @@
       <p class="hero__side-kanji hero__side-kanji--left" aria-hidden="true">創造の工房</p>
       <p class="hero__side-kanji hero__side-kanji--right" aria-hidden="true">百の閃き</p>
 
-      <div class="hero__content">
-        <div class="hero__eyebrow">
-          <span class="hero__rule"></span>
-          <span class="hero__eyebrow-text">Digital Atelier</span>
-          <span class="hero__seal" title="Create">創</span>
-          <span class="hero__eyebrow-text">Flow · Make · Play</span>
-          <span class="hero__rule"></span>
+      <div class="hero__split">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="hero__rule"></span>
+            <span class="hero__eyebrow-text">Digital Atelier</span>
+            <span class="hero__seal" title="Create">創</span>
+            <span class="hero__eyebrow-text">Flow · Make · Play</span>
+            <span class="hero__rule"></span>
+          </div>
+
+          <h1 class="hero__title-block">
+            <span class="hero__kanji">創</span>
+            <span class="hero__latin">Create</span>
+            <span class="hero__subtitle">創造文学百選</span>
+          </h1>
+
+          <div class="hero__accent" aria-hidden="true">
+            <span class="hero__accent-line"></span>
+            <span class="hero__accent-diamond"></span>
+            <span class="hero__accent-line"></span>
+          </div>
+
+          <p class="hero__tagline">
+            A vivid library of the <em>hundred works</em> that teach flow, courage,
+            craft, and how creativity is born—on the page, in the studio, in life.
+            <span class="hero__tagline-jp">フローと創造性をめぐる百の書</span>
+          </p>
+
+          <div class="hero__actions">
+            <a class="hero__cta" href="#library">
+              <span>Enter the atelier</span>
+              <span class="hero__cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></svg>
+              </span>
+            </a>
+            <a class="hero__cta hero__cta--ghost" href="#library">書架をひらく</a>
+          </div>
         </div>
 
-        <h1 class="hero__title-block">
-          <span class="hero__kanji">創</span>
-          <span class="hero__latin">Create</span>
-          <span class="hero__subtitle">創造文学百選</span>
-        </h1>
-
-        <div class="hero__accent" aria-hidden="true">
-          <span class="hero__accent-line"></span>
-          <span class="hero__accent-diamond"></span>
-          <span class="hero__accent-line"></span>
-        </div>
-
-        <p class="hero__tagline">
-          A vivid library of the <em>hundred works</em> that teach flow, courage,
-          craft, and how creativity is born—on the page, in the studio, in life.
-          <span class="hero__tagline-jp">フローと創造性をめぐる百の書</span>
-        </p>
-
-        <div class="hero__actions">
-          <a class="hero__cta" href="#library">
-            <span>Enter the atelier</span>
-            <span class="hero__cta-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></svg>
-            </span>
-          </a>
-          <a class="hero__cta hero__cta--ghost" href="#library">書架をひらく</a>
-        </div>
+        <figure class="hero__frame">
+          <img
+            src="assets/imagine/hero-concept.jpg"
+            alt="Imagine concept: floating books in a luminous creative portal"
+            width="900"
+            height="600"
+            decoding="async"
+          />
+          <figcaption>Imagine · creative web layout</figcaption>
+        </figure>
       </div>
 
       <a class="hero__scroll" href="#library" aria-label="Scroll to library shelves">
@@ -110,22 +132,61 @@
       </a>
     </header>
 
-    <main>
+    <main class="atelier-stage">
+      <div class="ambient-blob ambient-blob--a" aria-hidden="true"></div>
+      <div class="ambient-blob ambient-blob--b" aria-hidden="true"></div>
+      <div class="ambient-blob ambient-blob--c" aria-hidden="true"></div>
+
+      <!-- Bento inspiration strip (Imagine moodboard + texture) -->
+      <section class="inspire-bento" aria-label="Creative layout inspiration">
+        <div class="inspire-bento__grid">
+          <article class="inspire-card inspire-card--mood">
+            <img src="assets/imagine/moodboard.jpg" alt="" decoding="async" />
+            <div class="inspire-card__label">
+              <span>Moodboard</span>
+              <strong>Asymmetric · Neon · Editorial</strong>
+            </div>
+          </article>
+          <article class="inspire-card inspire-card--quote">
+            <p class="inspire-kicker">Layout keywords</p>
+            <h2>Creative web layout</h2>
+            <ul>
+              <li>Bento &amp; magazine grids</li>
+              <li>Glass panels · gradient mesh</li>
+              <li>Gallery rooms, not aisles</li>
+              <li>Books as installed objects</li>
+            </ul>
+          </article>
+          <article class="inspire-card inspire-card--texture">
+            <img src="assets/imagine/texture.jpg" alt="" decoding="async" />
+            <div class="inspire-card__label">
+              <span>Surface</span>
+              <strong>Holo foil · ink · clay</strong>
+            </div>
+          </article>
+          <article class="inspire-card inspire-card--stat">
+            <span class="inspire-stat">100</span>
+            <span class="inspire-stat-label">volumes on flow &amp; making</span>
+            <span class="inspire-stat-sub">10 studios · listen · apply</span>
+          </article>
+        </div>
+      </section>
+
       <section id="library" class="library seigaiha">
         <div class="library-header">
-          <span class="section-mark">工房 · Studios</span>
-          <h2>Top 100 Creativity &amp; Flow</h2>
-          <p>
-            Ten colorful studios of literature. Hover a volume to preview. Open
-            it for essence, ten insights, real-world applications, and natural
-            voice reading.
-          </p>
-          <p
-            id="book-count"
-            style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gold)"
-          >
-            —
-          </p>
+          <div class="library-header__copy">
+            <span class="section-mark">工房 · Studios</span>
+            <h2>Top 100 Creativity &amp; Flow</h2>
+            <p>
+              Ten gallery rooms of literature. Hover a volume to preview. Open
+              it for essence, ten insights, real-world applications, and natural
+              voice reading.
+            </p>
+          </div>
+          <div class="library-header__side">
+            <p id="book-count">—</p>
+            <div class="library-header__chip">Installation layout</div>
+          </div>
         </div>
 
         <div id="library-back-bar" class="library-back-bar" hidden>
@@ -144,7 +205,7 @@
         <div id="shelves" class="shelves" aria-live="polite"></div>
       </section>
 
-      <section id="about" class="library" style="padding-top: 0">
+      <section id="about" class="library">
         <div class="library-header">
           <span class="section-mark">案内 · About</span>
           <h2>Where creativity is born</h2>
@@ -191,12 +252,6 @@
         clip: rect(0, 0, 0, 0);
         border: 0;
       }
-      .nav-brand .jp {
-        background: linear-gradient(135deg, #ff2d55, #7c5cff);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
     </style>
 
     <script src="js/books.js"></script>
@@ -206,6 +261,14 @@
     <script src="js/app.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      // Soft-enable Imagine texture veil when asset is reachable
+      (function () {
+        var img = new Image();
+        img.onload = function () {
+          document.body.classList.add("texture-ready");
+        };
+        img.src = "assets/imagine/texture.jpg";
+      })();
     </script>
   </body>
 </html>
