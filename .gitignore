@@ -9,3 +9,4 @@ node_modules/
 songs/batches/
 songs/by_book/
 songs/jobs.json
+.env.local
