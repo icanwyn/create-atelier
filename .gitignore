@@ -4,3 +4,8 @@ node_modules/
 .env
 .env.*
 *.log
+
+# generated song intermediates (merged into js/book-insights.js)
+songs/batches/
+songs/by_book/
+songs/jobs.json
