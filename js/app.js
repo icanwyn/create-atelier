@@ -13,70 +13,60 @@
     {
       id: "flow",
       name: "Flow State",
-      jp: "没入",
       blurb: "Optimal experience, presence, and deep absorption",
       categories: ["Flow State"],
     },
     {
       id: "practice",
       name: "Creative Practice",
-      jp: "日課",
       blurb: "Rituals, habits, and showing up to make",
       categories: ["Creative Practice", "Creative Recovery"],
     },
     {
       id: "courage",
       name: "Creative Courage",
-      jp: "勇気",
       blurb: "Resistance, fear, and shipping imperfect work",
       categories: ["Creative Courage"],
     },
     {
       id: "process",
       name: "Creative Process",
-      jp: "過程",
       blurb: "How ideas form, incubate, and become real",
       categories: ["Creative Process"],
     },
     {
       id: "thinking",
       name: "Creative Thinking",
-      jp: "発想",
       blurb: "Lateral moves, blocks, and mental models for novelty",
       categories: ["Creative Thinking"],
     },
     {
       id: "focus",
       name: "Focus & Attention",
-      jp: "集中",
       blurb: "Deep work, rest, and reclaiming the mind",
       categories: ["Focus & Attention", "Motivation"],
     },
     {
       id: "craft",
       name: "Craft & Mastery",
-      jp: "習熟",
       blurb: "Deliberate practice, skill, and the long game",
       categories: ["Mastery", "Writing Craft", "Improvisation"],
     },
     {
       id: "design",
       name: "Design & Innovation",
-      jp: "設計",
       blurb: "Design thinking, prototypes, and idea networks",
       categories: ["Design Thinking", "Innovation"],
     },
     {
       id: "story",
       name: "Story & Vision",
-      jp: "物語",
       blurb: "Narrative, myth, and visual imagination",
       categories: ["Story & Myth", "Visual Thinking"],
     },
     {
       id: "spirit",
       name: "Spirit & Leadership",
-      jp: "精神",
       blurb: "Meaning, culture, and leading creative people",
       categories: ["Creative Spirit", "Creative Leadership"],
     },
@@ -273,7 +263,7 @@
     const books = filterBooks(getBooks());
     if (!books.length) {
       container.innerHTML =
-        '<p class="no-results">何も見つかりません — No books match your search.</p>';
+        '<p class="no-results">No books match your search.</p>';
       if ($("#book-count")) $("#book-count").textContent = "0 volumes";
       updateBackBar();
       return;
@@ -303,7 +293,6 @@
         <div class="shelf-label">
           <span class="shelf-num">${String(i + 1).padStart(2, "0")}</span>
           <span class="shelf-cat">${escapeHtml(shelf.name)}</span>
-          <span class="shelf-jp">${escapeHtml(shelf.jp || "")}</span>
           <span class="shelf-meta">${volLabel}</span>
         </div>
         <p class="shelf-blurb">${escapeHtml(shelf.blurb || "")}</p>
@@ -606,7 +595,7 @@
             <span class="tts-icon" aria-hidden="true">🎧</span>
             <div>
               <strong>Listen</strong>
-              <span class="tts-sub">Natural voice reading · 音声朗読</span>
+              <span class="tts-sub">Natural voice reading</span>
             </div>
           </div>
           <div class="tts-wave" aria-hidden="true">
@@ -685,11 +674,11 @@
         ${ttsPlayerHtml()}
 
         <div class="essence-block">
-          <div class="label">Essence · 神髄</div>
+          <div class="label">Essence</div>
           <p>${escapeHtml(book.essence || book.short || "")}</p>
         </div>
 
-        <h3 class="section-title"><span class="jp-mark">要</span> The Meat — Top 10 Insights</h3>
+        <h3 class="section-title">The Meat — Top 10 Insights</h3>
         <p class="expand-hint">Click any insight for a detailed summary and a specific real-world application.</p>
         <ol class="meat-list">
           ${insights
@@ -724,7 +713,7 @@
         </ol>
 
         <div class="applications-section">
-          <h3 class="section-title"><span class="jp-mark">実</span> Lifestyle Applications</h3>
+          <h3 class="section-title">Lifestyle Applications</h3>
           <p class="expand-hint" style="margin-top:-0.35rem">Key practices distilled from this book—expand for the full playbook.</p>
           <div class="app-cards">
             ${applications

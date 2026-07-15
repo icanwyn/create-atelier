@@ -1,5 +1,5 @@
 /**
- * Wealth 財 — Natural text-to-speech reader
+ * Create — Natural text-to-speech reader
  * Uses the Web Speech API with the best available system voices.
  * No API keys; works offline once voices are loaded (browser-dependent).
  */

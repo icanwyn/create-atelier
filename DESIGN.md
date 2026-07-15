@@ -1,4 +1,4 @@
-# Create 創 — Design Concept
+# Create — Design Concept
 
 **Where creativity is born.**  
 A digital atelier, not a bookstore.
@@ -37,7 +37,7 @@ Gradients move **pink → violet → cyan → amber**. Prefer CSS variables; avo
 2. **Books as objects** — Spines keep hover-tilt + tooltips, but rest at varied angles and tiny height offsets so the runway feels installed, not stocked.
 3. **Glass navigation** — Floating pill bar, blur + prism border; primary actions use the pink–violet gradient.
 4. **Studio desk modal** — Portfolio sheet: prism top edge, ruled-paper body, dark “soundboard” TTS panel.
-5. **Cinematic hero** — Mesh gradients, glass content plate, prism seal, oversized 創 as a light sculpture.
+5. **Cinematic hero** — Mesh gradients, glass content plate, prism seal, oversized Create wordmark as a light sculpture.
 
 ## Motion & a11y
 

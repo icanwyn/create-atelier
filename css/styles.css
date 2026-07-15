@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   Create 創 — Digital Atelier Layout System
+   Create — Digital Atelier Layout System
    Magazine × installation × studio floor
    Palette: pink · violet · cyan · amber · cream
    ═══════════════════════════════════════════════════════════════ */
@@ -1835,7 +1835,7 @@ body::after {
 }
 
 .insight-detail-block .app-label::before {
-  content: "詳";
+  content: "◎";
   font-family: var(--font-serif);
   color: var(--violet);
 }
@@ -1845,7 +1845,7 @@ body::after {
 }
 
 .insight-app-block .app-label::before {
-  content: "実";
+  content: "→";
   font-family: var(--font-serif);
   color: var(--pink);
 }

@@ -1,4 +1,4 @@
-# Create 創 — Creativity & Flow Library
+# Create — Creativity & Flow Library
 
 A vibrant digital atelier of the **top 100 books** on creativity, flow state, craft, and making.
 

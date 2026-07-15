@@ -1,9 +1,8 @@
 /* ============================================================
-   Create 創 — Cinematic Hero
+   Create — Cinematic Hero
    Where creativity is born · installation × editorial
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap');
 
 :root {
   --sumi: #14081f;
@@ -25,8 +24,8 @@
   --hero-pad-x: clamp(1.5rem, 6vw, 5rem);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
-  --font-display: 'Fraunces', 'Noto Serif JP', 'Times New Roman', serif;
-  --font-body: 'DM Sans', 'Noto Sans JP', 'Helvetica Neue', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', 'Helvetica Neue', system-ui, sans-serif;
   --font-latin: 'Fraunces', Georgia, serif;
 
   --hero-pink: #ff2d6a;
@@ -499,6 +498,26 @@
   text-indent: 0.42em;
   text-transform: uppercase;
   color: var(--sumi-soft);
+}
+
+/* Standalone wordmark when Japanese title is omitted */
+.hero__latin--solo {
+  margin-top: 0;
+  font-size: clamp(3.25rem, 11vw, 6.5rem);
+  letter-spacing: 0.12em;
+  text-indent: 0.06em;
+  line-height: 1;
+  background: linear-gradient(
+    145deg,
+    var(--sumi) 10%,
+    var(--hero-violet) 45%,
+    var(--hero-pink) 75%,
+    var(--hero-amber) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 24px rgba(124, 92, 255, 0.15));
 }
 
 .hero__subtitle {
