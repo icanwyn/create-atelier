@@ -1,0 +1,11 @@
+{
+  "name": "create-atelier",
+  "version": "1.0.0",
+  "description": "Create 創 — Digital atelier of top 100 creativity and flow literature",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve -l 3000",
+    "dev": "npx --yes serve -l 3000",
+    "generate:books": "node scripts/generate-books.js"
+  }
+}
