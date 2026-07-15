@@ -1851,10 +1851,25 @@ body::after {
 }
 
 .app-expand .insight-detail {
-  font-size: 0.9rem;
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
   color: var(--ink-soft);
-  line-height: 1.7;
+  line-height: 1.85;
   margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.app-expand .insight-detail p {
+  margin: 0 0 1.05rem;
+}
+
+.app-expand .insight-detail p:last-child {
+  margin-bottom: 0;
+}
+
+.app-expand .insight-detail p:first-child {
+  font-size: 1.02rem;
+  color: var(--ink);
 }
 
 .app-expand .app-title {
